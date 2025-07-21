@@ -2,15 +2,21 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import All from "./All";
 import Search from "./Search";
-import Login  from "./login";
+import Login from "./login";
+
+import Dashboard from "./DashBoard";
+import NavComponent from "./NavComponent";
+
 
 function ReactRouter() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/dashboard/all" element={<All />} />
-        <Route path="/search" element={<Search />} />
+        <Route path="/dashboard" element={<Dashboard />}>
+          <Route path="" element={<All />} />
+          <Route path="search" element={<Search />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

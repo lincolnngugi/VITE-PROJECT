@@ -21,15 +21,17 @@ import { createRoot } from "react-dom/client";
 
 // import SimpleEffect from "./Hooks/Effect/SimpleEffect";
 
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // import ManualRoute from "./Routing/ManualRoutes";
+
+import NavComponent from "./Routing/ReactRouter/NavComponent";
 
 // import Dashboard from "./Routing/ReactRouter/DashBoard";
 
 // import Login from "./Routing/ReactRouter/Login";
 import ReactRouter from "./Routing/ReactRouter";
-import Login from "./Routing/ReactRouter/login";
+// import Login from "./Routing/ReactRouter/login";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ReactRouter />
