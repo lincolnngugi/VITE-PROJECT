@@ -12,8 +12,8 @@ function Navigation(props) {
   return (
     <div style={{ display: "flex", flexDirection: "column", width: "100px" }}>
       <button
-        onClick={() => setPage("Home")}
-        className={`btn ${getclass("Home")} m-1`}
+        onClick={() => setPage("home")}
+        className={`btn ${getclass("home")} m-1`}
       >
         Home
       </button>

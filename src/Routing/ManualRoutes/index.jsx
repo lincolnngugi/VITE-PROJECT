@@ -1,7 +1,7 @@
 import About from "./About";
 import Navigation from "./Navigation";
 import Home from "./Home";
-import Contact from "./Contact";
+import Contact from "./contact";
 import { useState } from "react";
 
 function ManualRoute() {

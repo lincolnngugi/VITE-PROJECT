@@ -19,17 +19,19 @@ import { createRoot } from "react-dom/client";
 
 // import FormState from "./Hooks/State/FormState";
 
-// import SimpleEffects from "./Hooks/Effect/SimpleEffects";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Navigation from "./Routing/ManualRoutes/Navigation";
-import Home from "./Routing/ManualRoutes/Home";
-import About from "./Routing/ManualRoutes/About";
-import Contact from "./Routing/ManualRoutes/contact";
+// import SimpleEffect from "./Hooks/Effect/SimpleEffect";
+
+// import "bootstrap/dist/css/bootstrap.min.css";
+
+// import ManualRoute from "./Routing/ManualRoutes";
+
+// import Dashboard from "./Routing/ReactRouter/DashBoard";
+
+// import Login from "./Routing/ReactRouter/Login";
+import ReactRouter from "./Routing/ReactRouter";
+import Login from "./Routing/ReactRouter/login";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Navigation/>
-    <Home/>
-    <About/>
-    <Contact/>
+    <ReactRouter />
   </StrictMode>
 );
